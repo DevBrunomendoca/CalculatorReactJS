@@ -1,0 +1,79 @@
+:root {
+   --btn-color: #141516;
+   --background-color: #141516;
+   --bgCalculater-darck-color: #0e1524;
+   --font-darck-color: #f1f5f9;
+   --input-darck-color: #2d374d;
+   --bnt-darck-color: #2d374d;
+   --result-darck-color: #84a8f5;
+    /* Error color */
+   --error-color: #ff0043;
+    /* Success */
+   --success-color: #4dff91;
+}
+
+.container {
+   background-color: var(--bgCalculater-darck-color);
+   border: .125rem solid var(--font-darck-color);
+   border-radius: 1.5rem ;
+   width: 25rem;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+#input-calculater {
+   margin: 3rem 0 0;
+}
+#input {
+   background-color: var(--input-darck-color);
+   color: var(--font-darck-color);
+   font-size:3rem;
+   text-align: end;
+   width: 22rem;
+   padding: 6rem 1rem 0.5rem 0;
+   border: none;
+}
+#keys {
+   /* display: fle;
+   grid-template-columns: 1fr 1fr 1fr 1fr; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin: 1.5rem 0;
+   /* width: 22rem; */
+   
+}
+.btn-darck {
+   background-color: #2d374d;
+   color: #f1f5f9;
+}
+.btn-white {
+   background-color: #f1f5f9;
+   color: #141516;
+}
+.btn-orange {
+   background-color: #dd9b3e;
+   color: #f1f5f9;
+}
+#keys button {
+   
+   width: 5rem;
+   height: 5rem;
+   border:  none;
+   border-radius: 1em;   
+   cursor: pointer;
+   font-size: 1.75rem;
+   
+}
+#keys button:active {
+   filter: brightness(0.8);
+}
+#keys button:focus {
+   outline: none;
+}
+#equal {
+   background-color: var(--result-darck-color) !important; 
+}
